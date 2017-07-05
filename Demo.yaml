@@ -1,0 +1,14 @@
+tosca_definitions_version: d3_dsl_1_0_0sssssssdfsasd
+imports:
+  - D3NonNormativeTypes-1.0
+  - D3NormativeTypes-1.0
+  - D3BasicTypes-1.0
+  - D3NFVTypes-1.0
+  - CPE-1.0
+  - L2BR-1.0
+  - VPCGW-1.0
+metadata:
+  template_name: Site to DC Service template.
+  template_author: Jerome
+  template_version: 1
+description: Site2DC service template model define.
