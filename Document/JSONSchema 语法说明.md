@@ -27,7 +27,7 @@ JSON Schema 定义了如何基于 JSON 格式描述 JSON 数据结构的规范�
 
 对于基础学习，可以查看：https://spacetelescope.github.io/understanding-json-schema/index.html
 
-但是，我想说的是，上面的都有点复杂， 所以我想写一个比较全的例子，来方便理解和使用：
+上面的看起来有点复杂， 所以想写一个比较全的例子，来方便理解和使用：
 ```json
 {
     "$schema": "http://json-schema.org/schema#",  //$schema 关键字，表明该文档是一个JSONSchema文档，与一般的JSON文档 作为区别
