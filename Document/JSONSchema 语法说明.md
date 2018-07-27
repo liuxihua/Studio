@@ -127,3 +127,79 @@ JSON Schema 定义了如何基于 JSON 格式描述 JSON 数据结构的规范�
 }
 
 ```
+
+总结一下：
+
+JSON Schema 中
+
+- 基本数据类型有：
+
+        string
+        Numeric types
+        object
+        array
+        boolean
+        null
+ 
+ - 每个数据类型都支持的关键字有：
+ 
+    1.  描述信息相关的关键字：
+    ```json
+    {
+        "title" : "Match anything",
+        "description" : "This is a schema that matches anything.",
+        "default" : "Default value"
+    }
+    ```
+    2. 枚举值相关关键字：
+    ```json
+    {
+        "enum": ["red", "amber", "green"]
+    }
+    ```
+    
+  - 每个数据类型各自支持的关键字有：
+  
+    1. string类型支持的特有关键字
+        ```json
+        { "type": "string", 
+		  "pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$", 
+		  "minLength": 2, 
+		  "maxLength": 3, 
+		  "format": "date-time|email|hostname|ipv4|ipv6|uri" 
+        }
+        ```
+     2. number类型支持的特有关键字
+        ```json
+        {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "multipleOf" : 10,
+            "exclusiveMaximum": true
+        }
+        ```
+     3. object 类型支持的特有关键字
+        ```json
+        { 
+            "type": "object",
+            "properties": {
+                "name": { "type": "string" },
+			    "credit_card": { "type": "number" }
+		    }
+			"required": ["name"] 
+        }
+        ```
+     4. array 类型支持的特有关键字
+        ```json
+        { 
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 3, 
+            "items": 
+            {
+                "type": "number"
+			}
+        }
+        ```
+        
