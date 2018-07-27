@@ -203,3 +203,72 @@ JSON Schema 中
         }
         ```
         
+### 关键字集合 ###
+ ```json
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$comment": "",
+    "$ref": "",
+    "$id": "demo.json",   
+    "definitions":{
+    }
+    "additionalItems": true,
+    "additionalProperties": true,
+    "allOf": [
+        
+    ],
+    "anyOf": [
+        
+    ],
+    "const":"",
+    "contains": true,
+    "contentEncoding": "",
+    "contentMediaType": "",
+    "default":"",
+    "dependencies": {
+        
+    },
+    "description": "",
+    "else": true,
+    "enum": [
+        
+    ],
+    "examples": [
+        
+    ],
+    "exclusiveMaximum": 0,
+    "exclusiveMinimum": 0,
+    "format": "",
+    "if": true,
+    "items": true,
+    "maximum": 0,
+    "maxItems": 0,
+    "maxLength": 0,
+    "maxProperties": 0,
+    "minimum": 0,
+    "minItems":1,
+    "minLength":0,
+    "minProperties":0,
+    "multipleOf": 0,
+    "not": true,
+    "oneOf": [
+        
+    ],
+    "pattern": "",
+    "patternProperties": {
+        
+    },
+    "properties": {
+        
+    },
+    "propertyNames": true,
+    "readOnly": false,
+    "required": [
+        
+    ],
+    "then": true,
+    "title": "",
+    "type":"array",
+    "uniqueItems": false
+}
+```
