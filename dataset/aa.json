@@ -1,0 +1,14 @@
+{
+	"name": "aa",
+	"properties": {
+		"type": "DynamicsEntity",
+		"structure": [
+			{
+				"name": ""
+			},
+			{
+				"name": ""
+			}
+		]
+	}
+}
